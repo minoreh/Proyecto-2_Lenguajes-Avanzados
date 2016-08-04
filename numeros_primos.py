@@ -6,23 +6,22 @@ while fin<2:
     num= input()
     if num.isdigit():
         num = int(num)
-        if int(num) == 0:
-            print("ERROR: el numero digitado NO debe ser CERO")
-            break
         for i in range(1, num + 1):
             if (num % i == 0):
                 a = a + 1
+        if int(num) == 0:
+            print("ERROR: el numero digitado NO debe ser CERO")
+            break
         if (a != 2):
-            print(str(num) +" Tu numero No es primo")
+            print(str(num) + " Tu numero No es primo")
         else:
-            print(str(num) +" Tu numero Si es primo")
-        pass
+            print(str(num) + " Tu numero Si es primo")
         if (num % 2 == 0):
             print(str(num) + " es un numero par")
-            pass
+            break
         else:
             print(str(num) + " es un numero impar")
-            pass
+            break
 
     else:
         print(">ERROR: DEBE INGRESAR UN NUMERO ENTERO")
